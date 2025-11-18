@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/girlfriend-proposal/static/css/main.b2e5b6b7.css",
+    "main.js": "/girlfriend-proposal/static/js/main.414d53ee.js",
+    "static/media/photo8.jpg": "/girlfriend-proposal/static/media/photo8.71905c10db015a3ab331.jpg",
+    "static/media/photo2.jpg": "/girlfriend-proposal/static/media/photo2.674e5291c7269a45c544.jpg",
+    "static/media/photo11.jpg": "/girlfriend-proposal/static/media/photo11.a7622d6104879d86a0a1.jpg",
+    "static/media/photo7.jpg": "/girlfriend-proposal/static/media/photo7.b4dc274c72361564fa42.jpg",
+    "static/media/photo6.jpg": "/girlfriend-proposal/static/media/photo6.56ea06b76149af884ede.jpg",
+    "static/media/photo3.jpg": "/girlfriend-proposal/static/media/photo3.53c1d508da09c7eb8eee.jpg",
+    "static/media/photo10.jpg": "/girlfriend-proposal/static/media/photo10.823897354d51a2f7cc46.jpg",
+    "static/media/photo4.jpg": "/girlfriend-proposal/static/media/photo4.c62cc7ac2a59a386bd72.jpg",
+    "static/media/photo5.jpg": "/girlfriend-proposal/static/media/photo5.a232497499ef09e49447.jpg",
+    "static/media/photo12.jpg": "/girlfriend-proposal/static/media/photo12.983c5f18c1340fe8977b.jpg",
+    "static/media/other-photo2.jpg": "/girlfriend-proposal/static/media/other-photo2.eec1aef6e106bec1d1bf.jpg",
+    "static/media/photo1.jpg": "/girlfriend-proposal/static/media/photo1.9b9c53bce35aaca7bc00.jpg",
+    "static/media/photo9.jpg": "/girlfriend-proposal/static/media/photo9.a757b8382803fdeb4caf.jpg",
+    "static/media/other-photo5.jpg": "/girlfriend-proposal/static/media/other-photo5.7cfa03863382e65884a5.jpg",
+    "static/media/her-photo.jpg": "/girlfriend-proposal/static/media/her-photo.0606590c603000bcf8dd.jpg",
+    "static/media/other-photo1.jpg": "/girlfriend-proposal/static/media/other-photo1.2aa0b1bacbf8e6aa0247.jpg",
+    "static/media/other-photo4.jpg": "/girlfriend-proposal/static/media/other-photo4.ff64cf3cd99ee41efb59.jpg",
+    "index.html": "/girlfriend-proposal/index.html",
+    "main.b2e5b6b7.css.map": "/girlfriend-proposal/static/css/main.b2e5b6b7.css.map",
+    "main.414d53ee.js.map": "/girlfriend-proposal/static/js/main.414d53ee.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b2e5b6b7.css",
+    "static/js/main.414d53ee.js"
+  ]
+}
