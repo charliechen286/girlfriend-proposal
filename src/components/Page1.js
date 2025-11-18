@@ -25,7 +25,7 @@ const Page1 = ({ nextPage }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (name.toLowerCase() === 'alyssa luo') {
+    if (name.toLowerCase() === 'yutong alyssa luo') {
       nextPage();
     } else {
       setError(true);
@@ -67,11 +67,11 @@ const Page1 = ({ nextPage }) => {
             value={name}
             onChange={(e) => setName(e.target.value)}
             className={`name-input ${error ? 'error' : ''}`}
-            placeholder="Type your full name..."
+            placeholder="type your full name..."
           />
           {error && <p className="error-message">nope!</p>}
           <button type="submit" className="continue-btn">
-            Continue
+            continue
           </button>
         </motion.form>
       )}

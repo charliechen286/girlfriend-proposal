@@ -1,24 +1,24 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { motion } from 'framer-motion';
 
 const Page2 = ({ nextPage, selectedOptions, setSelectedOptions }) => {
   const options = [
     // Positive choices
-    "You make me laugh every day",
-    "Your smile lights up my world",
-    "You're incredibly smart and talented",
-    "You have the kindest heart",
-    "You challenge me to be better",
-    "You're my favorite person to talk to",
-    "You understand me like no one else",
-    "You're beautiful inside and out",
-    "We have amazing chemistry",
+    "your smile lights up my world",
+    "you're the prettiest girl ever",
+    "you care so much for those around you",
+    "you have a beautiful soul",
+    "you push me to be better",
+    "you understand me like no one else",
+    "you are the one and only yutog!",
+    "you have impeccable song/movie recs",
+    "you are the cutest sleepy orange cat!",
     // Funny/satire choices
-    "You owe me money",
-    "Your dog likes me",
-    "I already told my mom about you",
-    "It's free real estate",
-    "The voices in my head said yes"
+    "you are NOT ksi",
+    "you are a squirrel whisperer",
+    "you gave me crunchy cookie m&ms",
+    "you love matcha!",
+    "i saw a sign in the stars"
   ];
 
   const toggleOption = (option) => {
@@ -39,7 +39,7 @@ const Page2 = ({ nextPage, selectedOptions, setSelectedOptions }) => {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <h1 className="animated-text">why should i date you?</h1>
+      <h1 className="animated-text">why do i want to date you?</h1>
       <p className="subtitle">choose at least 9!</p>
       
       <div className="options-grid">
@@ -56,14 +56,14 @@ const Page2 = ({ nextPage, selectedOptions, setSelectedOptions }) => {
         ))}
       </div>
 
-      <p className="subtitle">Selected: {selectedOptions.length}/9</p>
+      <p className="selection-counter">selected: {selectedOptions.length}/9</p>
 
       <button 
         className="continue-btn" 
         onClick={nextPage}
         disabled={!canContinue}
       >
-        {canContinue ? "Continue" : `Choose ${9 - selectedOptions.length} more valid options`}
+        {canContinue ? "continue" : `choose ${9 - selectedOptions.length} more valid options`}
       </button>
     </motion.div>
   );

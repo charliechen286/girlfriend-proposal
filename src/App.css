@@ -1,3 +1,6 @@
+/* Import Josefin Sans font */
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +8,8 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background: linear-gradient(135deg, #ffd6e7 0%, #c2e9fb 100%);
+  font-family: 'Josefin Sans', sans-serif; /* Josefin Sans for body */
+  background: #ffd6e7; /* Pastel pink background */
   min-height: 100vh;
   overflow-x: hidden;
 }
@@ -63,41 +66,57 @@ body {
 
 /* Text Styles */
 .animated-text {
-  font-family: 'Georgia', serif;
+  font-family: 'Josefin Sans', sans-serif; /* Josefin Sans for headings */
   font-size: 3rem;
-  color: #5a67d8;
+  font-weight: 600; /* Semi-bold */
+  color: #333333; /* Dark gray text */
   margin-bottom: 20px;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+  letter-spacing: 0.5px;
 }
 
 .subtitle {
-  font-family: 'Arial', sans-serif;
+  font-family: 'Josefin Sans', sans-serif; /* Josefin Sans for subtitles */
   font-size: 1.5rem;
-  color: #6d6875;
+  font-weight: 400; /* Regular weight */
+  color: #555555; /* Medium dark gray */
   margin-bottom: 30px;
+  letter-spacing: 0.3px;
 }
 
 /* Input Styles */
 .name-input {
   padding: 15px 20px;
   font-size: 1.2rem;
-  border: 2px solid #a5b4fc;
+  font-family: 'Josefin Sans', sans-serif; /* Josefin Sans for input */
+  font-weight: 400;
+  border: 2px solid #ffb6c1; /* Pastel pink border */
   border-radius: 25px;
   width: 300px;
   text-align: center;
-  background: rgba(255,255,255,0.8);
+  background: rgba(255,255,255,0.9);
+  color: #333333; /* Dark gray text */
   transition: all 0.3s ease;
+  letter-spacing: 0.3px;
 }
 
 .name-input:focus {
   outline: none;
-  border-color: #5a67d8;
-  box-shadow: 0 0 10px rgba(90, 103, 216, 0.3);
+  border-color: #ff91a4; /* Slightly darker pastel pink */
+  box-shadow: 0 0 10px rgba(255, 145, 164, 0.3);
+}
+
+.name-input::placeholder {
+  color: #888888;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300; /* Light weight for placeholder */
 }
 
 .error-message {
   color: #e53e3e;
   font-size: 0.9rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
   margin-top: 10px;
   font-weight: bold;
 }
@@ -106,19 +125,23 @@ body {
 .continue-btn {
   padding: 15px 40px;
   font-size: 1.2rem;
-  background: linear-gradient(135deg, #a5b4fc 0%, #c4b5fd 100%);
-  color: white;
+  font-family: 'Josefin Sans', sans-serif; /* Josefin Sans for buttons */
+  font-weight: 600; /* Semi-bold */
+  background: linear-gradient(135deg, #ffb6c1 0%, #ff91a4 100%); /* Pastel pink gradient */
+  color: #333333; /* Dark gray text */
   border: none;
   border-radius: 25px;
   cursor: pointer;
   margin-top: 20px;
   transition: all 0.3s ease;
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  letter-spacing: 0.5px;
 }
 
 .continue-btn:hover {
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #ff91a4 0%, #ff6b8b 100%);
 }
 
 .continue-btn:disabled {
@@ -137,23 +160,29 @@ body {
 
 .option-item {
   padding: 15px;
-  background: rgba(255,255,255,0.7);
-  border: 2px solid #a5b4fc;
+  background: rgba(255,255,255,0.8);
+  border: 2px solid #ffb6c1; /* Pastel pink border */
   border-radius: 15px;
   cursor: pointer;
   transition: all 0.3s ease;
   font-size: 1rem;
+  font-family: 'Josefin Sans', sans-serif; /* Josefin Sans for options */
+  font-weight: 400;
+  color: #333333; /* Dark gray text */
+  letter-spacing: 0.2px;
 }
 
 .option-item.selected {
-  background: #a5b4fc;
-  color: white;
+  background: #ffb6c1; /* Pastel pink */
+  color: #333333; /* Dark gray text */
   transform: scale(1.05);
+  font-weight: 600; /* Semi-bold when selected */
 }
 
 .option-item:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: rgba(255,255,255,0.9);
 }
 
 /* Picture Comparison */
@@ -177,15 +206,15 @@ body {
 
 .picture-option:hover {
   transform: scale(1.05);
-  border-color: #a5b4fc;
+  border-color: #ffb6c1; /* Pastel pink */
 }
 
 .picture-option.correct {
-  border-color: #48bb78;
+  border-color: #a3e4a3; /* Pastel green */
 }
 
 .picture-option.wrong {
-  border-color: #e53e3e;
+  border-color: #ff9aa2; /* Pastel red */
 }
 
 /* Final Page */
@@ -202,6 +231,7 @@ body {
   object-fit: cover;
   border-radius: 10px;
   transition: transform 0.3s ease;
+  border: 2px solid #ffb6c1; /* Pastel pink border */
 }
 
 .collage img:hover {
@@ -220,22 +250,53 @@ body {
 .yes-btn, .no-btn {
   padding: 15px 30px;
   font-size: 1.2rem;
+  font-family: 'Josefin Sans', sans-serif; /* Josefin Sans for buttons */
+  font-weight: 600; /* Semi-bold */
   border: none;
   border-radius: 20px;
   cursor: pointer;
   transition: all 0.3s ease;
+  color: #333333; /* Dark gray text */
+  letter-spacing: 0.5px;
 }
 
 .yes-btn {
-  background: linear-gradient(135deg, #48bb78 0%, #38a169 100%);
-  color: white;
+  background: linear-gradient(135deg, #a3e4a3 0%, #82e082 100%); /* Pastel green */
+  box-shadow: 0 4px 15px rgba(163, 228, 163, 0.3);
 }
 
 .no-btn {
-  background: linear-gradient(135deg, #e53e3e 0%, #c53030 100%);
-  color: white;
+  background: linear-gradient(135deg, #ff9aa2 0%, #ff7b85 100%); /* Pastel red */
+  box-shadow: 0 4px 15px rgba(255, 154, 162, 0.3);
 }
 
-.yes-btn:hover, .no-btn:hover {
+.yes-btn:hover {
   transform: scale(1.1);
+  background: linear-gradient(135deg, #82e082 0%, #61d461 100%);
+  box-shadow: 0 6px 20px rgba(163, 228, 163, 0.4);
+}
+
+.no-btn:hover {
+  transform: scale(1.1);
+  background: linear-gradient(135deg, #ff7b85 0%, #ff5c68 100%);
+  box-shadow: 0 6px 20px rgba(255, 154, 162, 0.4);
+}
+
+/* Selection counter */
+.selection-counter {
+  font-size: 1.1rem;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  color: #555555;
+  margin: 15px 0;
+  letter-spacing: 0.3px;
+}
+
+/* Congratulatory messages */
+.congrats-message {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 500;
+  font-size: 1.3rem;
+  color: #333333;
+  margin-top: 20px;
 }

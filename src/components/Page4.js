@@ -9,8 +9,8 @@ const Page4 = ({ nextPage }) => {
     "are you sure???",
     "really sure??",
     "think again!",
-    "last chance!",
-    "you're breaking my heart 💔",
+    "last chance :(",
+    "please don't break my heart 💔",
     "okay fine... just kidding! SAY YES!"
   ];
 
@@ -39,7 +39,7 @@ const Page4 = ({ nextPage }) => {
       exit={{ opacity: 0 }}
     >
       <h1 className="animated-text">
-        so alyssa ... will you be my girlfriend? 🤞
+        alyssa ... will you be my girlfriend? :)
       </h1>
 
       <div className="yes-no-buttons">

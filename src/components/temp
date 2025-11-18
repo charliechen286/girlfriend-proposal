@@ -12,10 +12,6 @@ const Page5 = () => {
     require('../assets/images/your-photos/photo6.jpg'),
     require('../assets/images/your-photos/photo7.jpg'),
     require('../assets/images/your-photos/photo8.jpg'),
-    require('../assets/images/your-photos/photo9.jpg'),
-    require('../assets/images/your-photos/photo10.jpg'),
-    require('../assets/images/your-photos/photo11.jpg'),
-    require('../assets/images/your-photos/photo12.jpg'),
   ];
 
   return (
@@ -40,7 +36,7 @@ const Page5 = () => {
         animate={{ opacity: 1 }}
         transition={{ delay: 1 }}
       >
-        i can't wait to do life with you
+        i can't wait to do life with you :)
       </motion.p>
 
       <div className="collage">
